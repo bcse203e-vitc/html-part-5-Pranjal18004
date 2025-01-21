@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+html,
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 40px;
+}
+img{
+    height: 200px;
+    width:300px;
+}
+#pic:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+#pic #caption{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#pic:hover #caption{
+    opacity: 1;
+}
