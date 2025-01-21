@@ -30,6 +30,7 @@ body{
     color: white;
     transform: scale(1.05);
     transition: smooth;
+    box-shadow: rgb(199, 241, 199) 4px 4px 4px 4px;
 }
 @media(max-width:768px){
     #container{
