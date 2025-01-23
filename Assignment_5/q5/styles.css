@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.button-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Gradient background button */
+.gradient-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gradient-button:hover {
+    transform: scale(1.1);
+}
+
+/* Button with border color change on hover */
+.border-hover-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.border-hover-button:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+/* Glowing effect button */
+.glow-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.8);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(98, 0, 234, 1), 0 0 40px rgba(98, 0, 234, 0.8);
+}
