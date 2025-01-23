@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown li a {
+    padding: 0.75rem 1.5rem;
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: #575757;
+}
+
+/* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
