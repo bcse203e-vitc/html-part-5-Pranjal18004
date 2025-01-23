@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Card Container */
+.card-container {
+    perspective: 1000px; /* Adds 3D perspective */
+}
+
+/* 3D Card */
+.card {
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d; /* Ensures that child elements are rendered in 3D */
+    transition: transform 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Front of the Card */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side when it is rotated */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Front Side Styling */
+.card-front {
+    background-color: #4facfe;
+    color: white;
+}
+
+/* Back Side Styling */
+.card-back {
+    background-color: #ff6347;
+    color: white;
+    transform: rotateY(180deg); /* Initially rotates the back side */
+}
+
+/* Hover Effect for 3D Rotation */
+.card:hover {
+    transform: rotateY(180deg); /* Rotates the card when hovered */
+}
