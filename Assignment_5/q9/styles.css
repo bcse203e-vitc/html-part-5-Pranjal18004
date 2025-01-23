@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Pricing Table */
+.pricing-table {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Plan Styles */
+.plan {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.plan .price {
+    font-size: 2rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.plan ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Highlight Popular Plan */
+.plan.popular {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.plan.popular .price {
+    color: white;
+}
+
+.plan.popular button {
+    background: white;
+    color: #00f2fe;
+}
+
+/* Button Styles */
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #4facfe;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #00f2fe;
+    transform: scale(1.1);
+}
