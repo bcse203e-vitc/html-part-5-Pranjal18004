@@ -1,0 +1,21 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Box with Fixed Width and Height */
+.fixed-box {
+    width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    background-color: #4facfe; /* Box color */
+    border: 2px solid #00f2fe; /* Optional border */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
